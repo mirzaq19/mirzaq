@@ -3,22 +3,6 @@
 @tailwind utilities;
 @import "variables";
 
-.bg-dark1 {
-  background-color: $bg-dark1;
-}
-.bg-dark2 {
-  background-color: $bg-dark2;
-}
-.bg-dark3 {
-  background-color: $bg-dark3;
-}
-.bg-grape {
-  background-color: $bg-grape;
-}
-.bg-peach {
-  background-color: $bg-peach;
-}
-.bg-gradient-1 {
-  background: $bg-peach;
-  background: linear-gradient(135deg, $bg-peach 0%, $bg-grape 100%);
+body {
+  color: $text-color;
 }
