@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -29,15 +30,14 @@ export default function Hero() {
                   Hi guys let me introduce myself, my name is M. Auliya Mirzaq
                   Romdloni and you can call me{" "}
                   <span className="text-pink-500 font-semibold">Mirzaq</span>.
-                  I'm undergraduate student at Institut Teknologi Sepuluh
+                  I&apos;m undergraduate student at Institut Teknologi Sepuluh
                   Nopember.
                 </p>
-                <a
-                  href="#"
-                  className="font-bold border inline-block border-white px-4 py-3 rounded-md mt-4 hover:bg-white hover:text-dark1 transition-all duration-300"
-                >
-                  About Me
-                </a>
+                <Link href="#">
+                  <a className="font-bold border inline-block border-white px-4 py-3 rounded-md mt-4 hover:bg-white hover:text-dark1 transition-all duration-300">
+                    About Me
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -52,18 +52,26 @@ export default function Hero() {
         </div>
         <div className="mt-10 text-lg sm:text-2xl">
           <div className="flex gap-x-4 sm:gap-x-5 my-3">
-            <a href="#">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon icon={faYoutube} />
-            </a>
+            <Link href="#">
+              <a>
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </Link>
+            <Link href="#">
+              <a>
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </Link>
+            <Link href="#">
+              <a>
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </Link>
+            <Link href="#">
+              <a>
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
+            </Link>
           </div>
           <p className="text-sm font-semibold sm:text-xl">
             Download{" "}
