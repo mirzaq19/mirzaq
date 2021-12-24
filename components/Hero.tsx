@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Container from "./Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -11,7 +12,7 @@ import {
 export default function Hero() {
   return (
     <div className="bg-gradient-to-tr from-dark1 via-dark1 to-dark3 min-h-full">
-      <div className="container mx-auto px-6 py-12">
+      <Container className="py-12">
         <div className="flex flex-col-reverse md:flex-row gap-y-5 sm:gap-y-10 md:gap-y-0 md:gap-x-20">
           <div className="md:w-1/2 flex items-center">
             <div>
@@ -84,7 +85,7 @@ export default function Hero() {
             </a>
           </p>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

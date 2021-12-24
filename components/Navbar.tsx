@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import Container from "./Container";
 export default function Navbar() {
   return (
     <nav className="bg-dark1 py-4 w-full sticky top-0 z-10">
-      <div className="flex gap-x-3 container mx-auto px-6">
+      <Container className="flex gap-x-3">
         <Link href="/">
           <a className="navbar-brand">
             <Image
@@ -36,7 +37,7 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-      </div>
+      </Container>
     </nav>
   );
 }
