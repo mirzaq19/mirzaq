@@ -11,15 +11,15 @@ import {
 
 export default function Hero() {
   return (
-    <div className="bg-gradient-to-tr from-dark1 via-dark1 to-dark3 min-h-full">
+    <div className="bg-gradient-to-tr from-dark1 via-dark1 to-dark3">
       <Container className="py-12">
         <div className="flex flex-col-reverse md:flex-row gap-y-5 sm:gap-y-10 md:gap-y-0 md:gap-x-20">
           <div className="md:w-1/2 flex items-center">
             <div>
-              <div className="text-xl sm:text-2xl lg:text-3xl font-bold">
-                <h1>Hello,Friends !</h1>
+              <div className="text-xl sm:text-2xl sm:gap-y-1 lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold flex flex-col lg:gap-y-3">
+                <h1>Hello, Friends !</h1>
                 <h1>My Name is</h1>
-                <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-peach to-grape">
+                <h1 className="text-transparent bg-cover xl:pb-2 bg-clip-text bg-gradient-to-r from-peach to-grape">
                   M. Auliya Mirzaq Romdloni
                 </h1>
               </div>
