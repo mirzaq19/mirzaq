@@ -3,7 +3,7 @@ import Link from "next/link";
 import Container from "./Container";
 export default function Navbar() {
   return (
-    <nav className="bg-dark1 py-4 w-full sticky top-0 z-10">
+    <nav className="bg-dark1 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-70 py-4 w-full fixed top-0 z-10">
       <Container className="flex gap-x-3">
         <Link href="/">
           <a className="navbar-brand">
