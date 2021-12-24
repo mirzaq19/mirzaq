@@ -25,9 +25,9 @@ export default function AboutSection() {
             <p>
               Hello! My name is Mirzaq and let me talk about myself. I decided
               to start exploring about web development in August 2021 especially
-              on front-end development. I've tried to take various courses on
-              web development such as on youtube and online learning platforms
-              like Dicoding.
+              on front-end development. I&apos;ve tried to take various courses
+              on web development such as on youtube and online learning
+              platforms like Dicoding.
             </p>
             <p>
               There are so many things to learn about website development, but
@@ -36,8 +36,8 @@ export default function AboutSection() {
             </p>
             <p>
               And by looking at the times that are now entering the 4.0
-              industrial revolution, I don't only have programming skills. I
-              also have several skills such as video editing, graphic design,
+              industrial revolution, I don&apos;t only have programming skills.
+              I also have several skills such as video editing, graphic design,
               and UI/UX design.
             </p>
           </div>
