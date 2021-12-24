@@ -1,8 +1,8 @@
 import Image from "next/image";
 export default function Navbar() {
   return (
-    <nav className="bg-dark1 py-4 w-full">
-      <div className="flex gap-x-3 mx-5 sm:mx-10">
+    <nav className="bg-dark1 py-4 w-full sticky top-0 z-10">
+      <div className="flex gap-x-3 container mx-auto px-6">
         <a className="navbar-brand" href="/">
           <Image
             src="/assets/img/logo.webp"
@@ -11,7 +11,7 @@ export default function Navbar() {
             height={40}
           />
         </a>
-        <ul className="flex items-center text-white text-xs sm:text-base">
+        <ul className="flex items-center text-xs sm:text-base">
           <li className="p-2">
             <a href="#">About</a>
           </li>
