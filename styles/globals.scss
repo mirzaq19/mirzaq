@@ -1,20 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "variables";
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.bg-dark1 {
+  background-color: $bg-dark1;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+.bg-dark2 {
+  background-color: $bg-dark2;
 }
-
-* {
-  box-sizing: border-box;
+.bg-dark3 {
+  background-color: $bg-dark3;
+}
+.bg-grape {
+  background-color: $bg-grape;
+}
+.bg-peach {
+  background-color: $bg-peach;
+}
+.bg-gradient-1 {
+  background: $bg-peach;
+  background: linear-gradient(135deg, $bg-peach 0%, $bg-grape 100%);
 }
