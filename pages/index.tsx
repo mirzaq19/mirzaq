@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 import About from "../components/AboutSection";
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="bg-dark1">
       <Head>
         <title>{"Mirzaq's Portfolio"}</title>
         <meta
