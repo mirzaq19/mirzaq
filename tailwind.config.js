@@ -12,6 +12,9 @@ module.exports = {
         peach: "#ff56a5",
         grape: "#672ae7",
       },
+      borderWidth: {
+        3: "3px",
+      },
     },
   },
   plugins: [],
