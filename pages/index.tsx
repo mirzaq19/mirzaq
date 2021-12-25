@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/AboutSection";
+import Skill from "../components/SkillSection";
 const Home: NextPage = () => {
   return (
     <div className="bg-dark1">
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Navbar />
       <Hero />
       <About />
+      <Skill />
     </div>
   );
 };
