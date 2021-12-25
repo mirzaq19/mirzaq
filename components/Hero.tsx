@@ -11,8 +11,8 @@ import {
 
 export default function Hero() {
   return (
-    <div className="bg-gradient-to-tr from-dark1 via-dark1 to-dark3 pt-20">
-      <Container className="py-12">
+    <div className="bg-gradient-to-tr from-dark1 via-dark1 to-dark3">
+      <Container>
         <div className="flex flex-col-reverse md:flex-row gap-y-5 sm:gap-y-10 md:gap-y-0 md:gap-x-20">
           <div className="md:w-1/2 flex items-center">
             <div>

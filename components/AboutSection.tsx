@@ -4,7 +4,7 @@ import Container from "./Container";
 export default function AboutSection() {
   return (
     <div className="bg-dark2">
-      <Container className="py-12">
+      <Container>
         <div className="flex flex-col items-center">
           <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold">
             About Me
