@@ -11,7 +11,7 @@ const Container: React.FC<ContainerProps> = ({
   return (
     <div
       className={`container mx-auto px-6 ${className ?? ""} ${
-        isWide ? "" : "py-20"
+        isWide ? "" : "py-28"
       }`}
     >
       {children}
