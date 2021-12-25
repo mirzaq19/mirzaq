@@ -1,16 +1,12 @@
 import Image from "next/image";
 import Container from "./Container";
+import TitleSection from "./TitleSection";
 
 export default function AboutSection() {
   return (
     <div className="bg-dark2">
       <Container>
-        <div className="flex flex-col items-center">
-          <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold">
-            About Me
-          </h1>
-          <hr className="w-5/12 sm:w-4/12 lg:w-2/12 my-3 border-2 border-peach" />
-        </div>
+        <TitleSection title="About Me" />
         <div className="my-5 lg:my-10">
           <p className="text-center text-sm sm:text-lg lg:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-peach  via-peach to-grape">
             Whether something is good or not depends on the perspective of the
