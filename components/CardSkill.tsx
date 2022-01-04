@@ -8,7 +8,10 @@ interface CardSkillProps {
 
 const CardSkill: React.FC<CardSkillProps> = ({ children, title, icon }) => {
   return (
-    <div className="text-center bg-dark3 p-8 rounded-xl relative">
+    <div className="cardskill text-center bg-dark3 p-8 rounded-xl relative">
+      <div className="layer-wrapper rounded-xl top-0 left-0 w-full h-full absolute overflow-hidden z-[1]">
+        <div className="layer bg-grape w-full h-full absolute left-0 transition-all ease-in-out duration-300"></div>
+      </div>
       <div
         className="
       text-3xl 
@@ -24,17 +27,20 @@ const CardSkill: React.FC<CardSkillProps> = ({ children, title, icon }) => {
       rounded-full 
       bg-gradient-to-br 
       from-peach 
-      to-violet-900"
+      to-violet-900
+      z-[2]"
       >
         <FontAwesomeIcon
           className="absolute -translate-x-1/2 -translate-y-1/2"
           icon={icon}
         />
       </div>
-      <h1 className="text-base sm:text-2xl lg:text-3xl font-bold mt-5 sm:mt-9 mb-3">
+      <h1 className="relative text-base sm:text-2xl lg:text-3xl font-bold mt-5 sm:mt-9 mb-3 z-[3]">
         {title}
       </h1>
-      <p className="text-xs sm:text-base md:text-lg">{children}</p>
+      <p className="relative text-xs sm:text-base md:text-lg z-[3]">
+        {children}
+      </p>
     </div>
   );
 };

@@ -3,6 +3,8 @@
 @tailwind utilities;
 @import "variables";
 
+@import "CardSkill.scss";
+
 body {
   color: $text-color;
 }

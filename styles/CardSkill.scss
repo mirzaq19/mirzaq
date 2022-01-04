@@ -1,0 +1,10 @@
+.cardskill {
+  .layer {
+    top: 100%;
+  }
+  &:hover {
+    .layer {
+      top: 0;
+    }
+  }
+}
