@@ -1,6 +1,7 @@
 import Image from "next/image";
 import TitleSection from "./TitleSection";
 import Container from "./Container";
+import CardSkill from "./CardSkill";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDrawPolygon,
@@ -85,101 +86,20 @@ export default function SkillSection() {
           />
         </div>
         <div className="flex flex-col my-20 px-10 gap-y-14 sm:gap-y-20 sm:pt-12 lg:gap-y-0 lg:flex-row lg:pt-14 lg:gap-x-10 xl:gap-x-20 xl:px-20 2xl:px-52">
-          <div className="text-center bg-dark3 p-8 rounded-xl relative">
-            <div
-              className="
-              text-3xl 
-              sm:text-5xl 
-              p-9 
-              sm:p-14
-              absolute 
-              -translate-x-1/2 
-              -translate-y-16 
-              sm:-translate-y-24
-              transfor 
-              inline-block 
-              rounded-full 
-              bg-gradient-to-br 
-              from-peach 
-              to-violet-900"
-            >
-              <FontAwesomeIcon
-                className="absolute -translate-x-1/2 -translate-y-1/2"
-                icon={faDrawPolygon}
-              />
-            </div>
-            <h1 className="text-base sm:text-2xl lg:text-3xl font-bold mt-5 sm:mt-9 mb-3">
-              Graphic Design
-            </h1>
-            <p className="text-xs sm:text-base md:text-lg">
-              In the field of graphic design, I usually make designs for assets
-              on my website or projects using Adobe Illustrator
-            </p>
-          </div>
-          <div className="text-center bg-dark3 p-8 rounded-xl relative">
-            <div
-              className="
-              text-3xl 
-              sm:text-5xl 
-              p-9 
-              sm:p-14
-              absolute 
-              -translate-x-1/2 
-              -translate-y-16 
-              sm:-translate-y-24
-              transfor 
-              inline-block 
-              rounded-full 
-              bg-gradient-to-br 
-              from-peach 
-              to-violet-900"
-            >
-              <FontAwesomeIcon
-                className="absolute -translate-x-1/2 -translate-y-1/2"
-                icon={faMobileAlt}
-              />
-            </div>
-            <h1 className="text-base sm:text-2xl lg:text-3xl font-bold mt-5 sm:mt-9 mb-3">
-              UI/UX Design
-            </h1>
-            <p className="text-xs sm:text-base md:text-lg">
-              In the field of UI/UX design I also have experience in using
-              design platforms such as figma. This website is one that I
-              designed using figma
-            </p>
-          </div>
-          <div className="text-center bg-dark3 p-8 rounded-xl relative">
-            <div
-              className="
-              text-3xl 
-              sm:text-5xl 
-              p-9 
-              sm:p-14
-              absolute 
-              -translate-x-1/2 
-              -translate-y-16 
-              sm:-translate-y-24
-              transfor 
-              inline-block 
-              rounded-full 
-              bg-gradient-to-br 
-              from-peach 
-              to-violet-900"
-            >
-              <FontAwesomeIcon
-                className="absolute -translate-x-1/2 -translate-y-1/2"
-                icon={faLaptopCode}
-              />
-            </div>
-            <h1 className="text-base sm:text-2xl lg:text-3xl font-bold mt-5 sm:mt-9 mb-3">
-              Web Development
-            </h1>
-            <p className="text-xs sm:text-base md:text-lg">
-              In the field of web development, when I work on projects I am also
-              familiar with several technologies such as HTML, CSS, Javascript,
-              Typescript, React, and so on.
-            </p>
-          </div>
+          <CardSkill title="Graphic Design" icon={faDrawPolygon}>
+            In the field of graphic design, I usually make designs for assets on
+            my website or projects using Adobe Illustrator
+          </CardSkill>
+          <CardSkill title="UI/UX Design" icon={faMobileAlt}>
+            In the field of UI/UX design I also have experience in using design
+            platforms such as figma. This website is one that I designed using
+            figma
+          </CardSkill>
+          <CardSkill title="Web Development" icon={faLaptopCode}>
+            In the field of web development, when I work on projects I am also
+            familiar with several technologies such as HTML, CSS, Javascript,
+            Typescript, React, and so on.
+          </CardSkill>
         </div>
       </Container>
     </div>
