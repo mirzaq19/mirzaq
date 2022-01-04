@@ -85,7 +85,7 @@ export default function SkillSection() {
             height={50}
           />
         </div>
-        <div className="flex flex-col my-20 px-10 gap-y-14 sm:gap-y-20 sm:pt-12 lg:gap-y-0 lg:flex-row lg:pt-14 lg:gap-x-10 xl:gap-x-20 xl:px-20 2xl:px-52">
+        <div className="grid grid-cols-1 lg:grid-cols-3 my-20 px-10 gap-y-14 sm:gap-y-20 sm:pt-12 lg:gap-y-0 lg:flex-row lg:pt-14 lg:gap-x-10 xl:gap-x-20 xl:px-20 2xl:px-52">
           <CardSkill title="Graphic Design" icon={faDrawPolygon}>
             In the field of graphic design, I usually make designs for assets on
             my website or projects using Adobe Illustrator
