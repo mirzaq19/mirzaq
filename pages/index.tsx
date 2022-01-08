@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/AboutSection";
 import Skill from "../components/SkillSection";
+import Portofolio from "../components/PortfolioSection";
 const Home: NextPage = () => {
   return (
     <div className="bg-dark1">
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <Hero />
       <About />
       <Skill />
+      <Portofolio />
     </div>
   );
 };
