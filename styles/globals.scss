@@ -5,6 +5,9 @@
 
 @import "CardSkill.scss";
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: $text-color;
 }

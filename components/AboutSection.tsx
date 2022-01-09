@@ -4,7 +4,7 @@ import TitleSection from "./TitleSection";
 
 export default function AboutSection() {
   return (
-    <div className="bg-dark2">
+    <div id="about" className="bg-dark2">
       <Container>
         <TitleSection title="About Me" />
         <div className="my-5 lg:my-10">

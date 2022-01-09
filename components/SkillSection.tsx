@@ -2,7 +2,6 @@ import Image from "next/image";
 import TitleSection from "./TitleSection";
 import Container from "./Container";
 import CardSkill from "./CardSkill";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDrawPolygon,
   faMobileAlt,
@@ -11,7 +10,7 @@ import {
 
 export default function SkillSection() {
   return (
-    <div className="bg-dark1">
+    <div className="bg-dark1" id="skill">
       <Container>
         <TitleSection title="My Skill" />
         <p className="text-xs sm:text-base lg:text-lg text-center mt-5 mb-10">

@@ -17,23 +17,23 @@ export default function Navbar() {
         </Link>
         <ul className="flex items-center text-xs sm:text-base">
           <li className="p-2">
-            <Link href="#">
+            <Link href="#hero">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li className="p-2">
+            <Link href="#about">
               <a>About</a>
             </Link>
           </li>
           <li className="p-2">
-            <Link href="#">
+            <Link href="#skill">
               <a>Skill</a>
             </Link>
           </li>
           <li className="p-2">
-            <Link href="#">
+            <Link href="#portfolio">
               <a>Projects</a>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href="#">
-              <a>Contact</a>
             </Link>
           </li>
         </ul>

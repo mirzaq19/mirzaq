@@ -39,7 +39,7 @@ export default function PortfolioSection() {
   const [nextEl, setNextEl] = useState<HTMLButtonElement | null>(null);
 
   return (
-    <div className="bg-dark2">
+    <div id="portfolio" className="bg-dark2">
       <Container>
         <TitleSection title="Portfolio Gallery" />
         <div className="my-10 flex justify-center items-center">
