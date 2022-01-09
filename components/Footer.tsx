@@ -12,19 +12,19 @@ export default function Footer() {
   const socialMedia = [
     {
       icon: faGithub,
-      link: "#",
+      link: "https://github.com/mirzaq19",
     },
     {
       icon: faInstagram,
-      link: "#",
+      link: "https://www.instagram.com/mirzaq_arjap/",
     },
     {
       icon: faLinkedin,
-      link: "#",
+      link: "https://www.linkedin.com/in/m-auliya-mirzaq-romdloni-971974189/",
     },
     {
       icon: faYoutube,
-      link: "#",
+      link: "https://www.youtube.com/channel/UCK1-Vc_p0KBi1re-ojVvYlQ",
     },
   ];
 
@@ -36,6 +36,7 @@ export default function Footer() {
           {socialMedia.map(({ icon, link }) => (
             <a
               href={link}
+              target={link.startsWith("http") ? "_blank" : ""}
               className="hover:text-peach transition-all duration-300"
             >
               <FontAwesomeIcon icon={icon} />
@@ -46,7 +47,8 @@ export default function Footer() {
           &copy; 2022 | Made with{" "}
           <FontAwesomeIcon className="text-red-500" icon={faHeart} /> By{" "}
           <a
-            href="#"
+            href="https://github.com/mirzaq19"
+            target="_blank"
             className="border-transparent border-b-2 hover:border-gray-300 transition-all duration-300"
           >
             M. Auliya Mirzaq Romdloni

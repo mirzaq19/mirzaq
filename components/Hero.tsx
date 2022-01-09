@@ -10,6 +10,24 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Hero() {
+  const socialMedia = [
+    {
+      icon: faGithub,
+      link: "https://github.com/mirzaq19",
+    },
+    {
+      icon: faInstagram,
+      link: "https://www.instagram.com/mirzaq_arjap/",
+    },
+    {
+      icon: faLinkedin,
+      link: "https://www.linkedin.com/in/m-auliya-mirzaq-romdloni-971974189/",
+    },
+    {
+      icon: faYoutube,
+      link: "https://www.youtube.com/channel/UCK1-Vc_p0KBi1re-ojVvYlQ",
+    },
+  ];
   return (
     <div className="bg-gradient-to-tr from-dark1 via-dark1 to-dark3">
       <Container>
@@ -53,26 +71,15 @@ export default function Hero() {
         </div>
         <div className="mt-10 text-lg sm:text-2xl">
           <div className="flex gap-x-4 sm:gap-x-5 my-3">
-            <Link href="#">
-              <a>
-                <FontAwesomeIcon icon={faLinkedin} />
+            {socialMedia.map(({ icon, link }) => (
+              <a
+                href={link}
+                target={link.startsWith("http") ? "_blank" : ""}
+                className="hover:text-peach transition-all duration-300"
+              >
+                <FontAwesomeIcon icon={icon} />
               </a>
-            </Link>
-            <Link href="#">
-              <a>
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </Link>
-            <Link href="#">
-              <a>
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-            </Link>
-            <Link href="#">
-              <a>
-                <FontAwesomeIcon icon={faYoutube} />
-              </a>
-            </Link>
+            ))}
           </div>
           <p className="text-sm font-semibold sm:text-xl">
             Download{" "}
