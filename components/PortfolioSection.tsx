@@ -3,6 +3,7 @@ import TitleSection from "./TitleSection";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import { useState } from "react";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -54,28 +55,29 @@ export default function PortfolioSection() {
           >
             {projects.map((project, index) => (
               <SwiperSlide key={index}>
-                <div className="flex flex-col items-center justify-center">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full"
-                  />
-                  <div className="text-center mt-4">
-                    {project.active ? (
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white border-transparent border-b-2 hover:border-white transition-all duration-300"
-                      >
-                        {project.title}
-                      </a>
-                    ) : (
-                      <span className="text-white border-transparent border-b-2 hover:border-white transition-all duration-300">
-                        {project.title}
-                      </span>
-                    )}
-                  </div>
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  layout="responsive"
+                  className="w-full h-full"
+                  height={550}
+                  width={800}
+                />
+                <div className="text-center mt-4">
+                  {project.active ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white border-transparent border-b-2 hover:border-white transition-all duration-300"
+                    >
+                      {project.title}
+                    </a>
+                  ) : (
+                    <span className="text-white border-transparent border-b-2 hover:border-white transition-all duration-300">
+                      {project.title}
+                    </span>
+                  )}
                 </div>
               </SwiperSlide>
             ))}
