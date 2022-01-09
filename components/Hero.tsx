@@ -77,6 +77,7 @@ export default function Hero() {
                 target={link.startsWith("http") ? "_blank" : ""}
                 className="hover:text-peach transition-all duration-300"
                 key={idx}
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={icon} />
               </a>

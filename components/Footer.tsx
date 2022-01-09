@@ -39,6 +39,7 @@ export default function Footer() {
               target={link.startsWith("http") ? "_blank" : ""}
               className="hover:text-peach transition-all duration-300"
               key={idx}
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={icon} />
             </a>
@@ -50,6 +51,7 @@ export default function Footer() {
           <a
             href="https://github.com/mirzaq19"
             target="_blank"
+            rel="noopener noreferrer"
             className="border-transparent border-b-2 hover:border-gray-300 transition-all duration-300"
           >
             M. Auliya Mirzaq Romdloni
