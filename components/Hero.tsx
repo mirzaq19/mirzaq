@@ -71,11 +71,12 @@ export default function Hero() {
         </div>
         <div className="mt-10 text-lg sm:text-2xl">
           <div className="flex gap-x-4 sm:gap-x-5 my-3">
-            {socialMedia.map(({ icon, link }) => (
+            {socialMedia.map(({ icon, link }, idx) => (
               <a
                 href={link}
                 target={link.startsWith("http") ? "_blank" : ""}
                 className="hover:text-peach transition-all duration-300"
+                key={idx}
               >
                 <FontAwesomeIcon icon={icon} />
               </a>

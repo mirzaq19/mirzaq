@@ -33,11 +33,12 @@ export default function Footer() {
       <Container className="py-5 text-center" isWide={true}>
         <p className="font-bold text-base md:text-lg">Reach me out</p>
         <div className="text-xl md:text-2xl flex justify-center gap-x-5 my-3">
-          {socialMedia.map(({ icon, link }) => (
+          {socialMedia.map(({ icon, link }, idx) => (
             <a
               href={link}
               target={link.startsWith("http") ? "_blank" : ""}
               className="hover:text-peach transition-all duration-300"
+              key={idx}
             >
               <FontAwesomeIcon icon={icon} />
             </a>
