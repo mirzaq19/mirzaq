@@ -8,9 +8,9 @@ interface CardSkillProps {
 
 const CardSkill: React.FC<CardSkillProps> = ({ children, title, icon }) => {
   return (
-    <div className="cardskill text-center bg-dark3 p-8 rounded-xl relative">
+    <div className="group text-center bg-dark3 p-8 rounded-xl relative">
       <div className="layer-wrapper rounded-xl top-0 left-0 w-full h-full absolute overflow-hidden z-[1]">
-        <div className="layer bg-grape w-full h-full absolute left-0 transition-all ease-in-out duration-300"></div>
+        <div className="layer bg-grape w-full h-full absolute top-full group-hover:top-0 left-0 transition-all ease-in-out duration-300"></div>
       </div>
       <div
         className="
