@@ -59,6 +59,7 @@ export default function PortfolioSection() {
                   src={project.image}
                   alt={project.title}
                   layout="responsive"
+                  priority={true}
                   className="w-full h-full"
                   height={550}
                   width={800}
