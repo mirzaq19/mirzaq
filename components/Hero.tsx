@@ -52,7 +52,7 @@ export default function Hero() {
                   I&apos;m undergraduate student at Institut Teknologi Sepuluh
                   Nopember.
                 </p>
-                <Link href="#">
+                <Link href="#about">
                   <a className="font-bold border inline-block border-white px-4 py-3 rounded-md mt-4 hover:bg-white hover:text-dark1 transition-all duration-300">
                     About Me
                   </a>
